@@ -30,6 +30,7 @@ body {
 }
 
 .listItem1 {
+  position: relative;
   display: inline;
   color: white;
   font-size: 2em;

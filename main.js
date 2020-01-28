@@ -9,3 +9,7 @@ function goToGame() {
 function scrollToAbout() {
   window.scrollTo(0, 1770);
 }
+
+function scrollToContact() {
+  window.scrollTo(0, 925);
+}
