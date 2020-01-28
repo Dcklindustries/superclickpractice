@@ -152,6 +152,15 @@ body {
   left: 0;
 }
 
+.footerContact {
+  position: relative;
+  top: 250px;
+  margin: 0 0 0 1580px;
+  padding: 0;
+  color: white;
+  font-size: 1.5em;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .mobile {
@@ -280,14 +289,6 @@ body {
     height: auto;
     margin: 10px 0 0 0;
   }
-}
-
-.footerContact{
-  position: relative;
-  top: 250px;
-  margin-left: 1590px;
-  color: white;
-  font-size: 1.5em;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

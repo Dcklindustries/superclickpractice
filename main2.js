@@ -18,6 +18,10 @@ let circle = document.getElementById("circle01");
 
 let maxWidth = 65;
 let minWidth = 25;
+highscore = localStorage.getItem("highscore");
+
+document.getElementById("highscore1").innerHTML =
+  "Highscore: " + localStorage.getItem("highscore");
 
 function getRanNum() {
   ranNumb1 = Math.floor(Math.random() * 80) + 5;
@@ -74,7 +78,17 @@ function startGame() {
     if (score > highscore) {
       highscore = score;
     }
-    document.getElementById("highscore1").innerHTML = "Highscore: " + highscore;
+
+    if (typeof Storage !== "undefined") {
+      localStorage.setItem("highscore", highscore);
+    } else {
+      document.getElementById("highscore1").innerHTML =
+        "Sorry, your browser does not support the current storage system!";
+    }
+
+    document.getElementById("highscore1").innerHTML =
+      "Highscore: " + localStorage.getItem("highscore");
+
     seconds = 60;
   } else {
     setTimeout(startGame, 1000);
