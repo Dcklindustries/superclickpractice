@@ -163,5 +163,9 @@ function newTheme() {
     board.style.backgroundImage = "Url(themeImages/flower1.jpeg)";
     circle.style.backgroundColor = "red";
     board.style.backgroundSize = "cover";
+  } else if (selectTheme.value == "space") {
+    board.style.backgroundImage = "Url(themeImages/space1.jpeg";
+    circle.style.backgroundColor = "white";
+    board.style.backgroundSize = "cover";
   }
 }
