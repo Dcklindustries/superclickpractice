@@ -159,5 +159,9 @@ function newTheme() {
   } else if (selectTheme.value == "light") {
     board.style.backgroundColor = "rgb(207, 207, 207)";
     circle.style.backgroundColor = "black";
+  } else if (selectTheme.value == "flower") {
+    board.style.backgroundImage = "Url(themeImages/flower1.jpeg)";
+    circle.style.backgroundColor = "red";
+    board.style.backgroundSize = "cover";
   }
 }
